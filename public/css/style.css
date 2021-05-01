@@ -1,0 +1,326 @@
+body {
+    margin: 0 !important;
+    padding: 0;
+}
+div.headerBar {
+    background-color: #031125;
+    height: 64px;
+    color: #fff;
+    box-shadow: 2px -2px 20px 0px #000;
+}
+.lBlock {
+    width: 20%;
+    float: left;
+}
+span#brand {
+    line-height: 63px;
+    position: relative;
+    left: 25px;
+    font-size: 18px;
+}
+.topBlock {
+    height: 310px;
+    background-image: url(../img/nightSky.jpg);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+}
+.weatherBody {
+    width: 100%;
+}
+.weatherDetailsContainer {
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    margin: auto auto;
+    position: absolute;
+    top: 120px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 19px 10px #dedddd;
+}
+.overlay {
+   height: 310px;
+    background-color: rgba(0, 0, 0, 0.49);
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+}
+
+.logo img.logo {
+    width: 70px;
+    position: relative;
+    top: 7px;
+    left: 40px;
+}
+.menu {
+    width: 20%;
+    float: right;
+}
+
+.menu img.menu {
+    width: 17px;
+    top: 22px;
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+}
+
+span.logoTitle {
+    color: #000;
+    position: absolute;
+    left: 90px;
+    top: 22px;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+}
+.dateBlock {
+    float: left;
+    width: 60%;
+    height: inherit;
+    line-height: 65px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #e9e9e9;
+    font-weight: 500;
+    font-family: serif;
+}
+.weatherDetailsTop {
+    height: 195px;
+}
+.weatherDetailsTopLeft {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 6%;
+    position: relative;
+    left: 100px;
+}
+.degree span {
+    font-size: 65px;
+}
+
+.statusText span {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 16px 0 0 0;
+    font-family: initial;
+    border-top: .5px solid #fff;
+    position: relative;
+    top: 22px;
+}
+
+.weatherDetailsTopRight {
+    width: 50%;
+    float: left;
+    margin: 12.5% 0 0;
+}
+
+span.currentLoca i {
+    font-size: 20px;
+    position: relative;
+    right: 3px;
+    cursor: pointer;
+    top: 3px;
+}
+
+span.currentInpu input {
+    border: .5px solid #174674;
+    outline: 0;
+    width: 200px;
+    height: 31px;
+    border-radius: 3px;
+    margin: 2px 17px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    background-color: rgba(48, 82, 108, 0);
+    color: #fff;
+}
+
+span.currentSear {
+    position: relative;
+    top: 8px;
+    right: 2px;
+    color: #c8e2f0;
+}
+span.currentSear i {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+}
+.locaText {
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+    font-family: serif;
+    letter-spacing: 2px;
+    color: #d0d0d0;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.botBlock {
+    height: 310px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.locaText{
+    display: none;
+}
+.completeDetailsBlock {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    height: 220px;
+}
+.details {
+    width: 20%;
+    float: left;
+}
+p.reportHead {
+    text-align: center;
+}
+p.reportValue {
+    text-align: center;
+}
+.reportIcon {
+    width: 53px;
+    height: 50px;
+    margin: 20px auto 15px auto;
+}
+.reportIconRain {
+    background: url(../img/weather-con.png) no-repeat -34px -154px;
+}
+.reportIconVis {
+    background: url(../img/weather-con.png) no-repeat -94px -210px;
+}
+.reportIconWind {
+    background: url(../img/weather-con.png) no-repeat -162px -211px;
+}
+.reportIconHum {
+    background: url(../img/weather-con.png) no-repeat -156px -100px;
+}
+.reportIconDew {
+    background: url(../img/weather-con.png) no-repeat -157px -157px;
+}
+p#statusSummary {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #585757;
+}
+
+.aboutImageBlock {
+    width: 100%;
+    height: 460px;
+}
+
+p.aboutMeDetailsHeading {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 1px;
+}
+
+p.aboutMeDetailsName {
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+p.aboutMeDetails {
+    font-family: 'Rambla', sans-serif;
+    font-size: 13px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #484848;
+    margin: 0 0 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.contactDetails {
+    margin-bottom: 8px;
+}
+span.detailsHead {
+    color: #101010;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+
+span.detailsValue {
+    font-size: 14px;
+    color: #464444;
+    letter-spacing: 1px;
+}
+img.profileAboutImage {
+    border-radius: 5px;
+}
+a.brandLink {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.skillsBlock {
+    margin-bottom: 25px;
+}
+span.skillSet {
+    font-size: 12px;
+    padding: 5px 7px 5px 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 5px 0px 0;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+span.skillSet.skillSetHtml {
+    background-color: #e34f26;
+}
+span.skillSet.skillSetCSS {
+    background-color: #002561;
+}
+span.skillSet.skillSetJavaScript {
+    background-color: #f7df1e;
+}
+span.skillSet.skillSetNode {
+    background-color: #215732;
+}
+span.skillSet.skillSetExpress {
+    background-color: #002663;
+}
+span.skillSet.skillSetMongoDB {
+    background-color: #589636;
+}
+
+span.skillSetIcon img {
+    max-height: 35px;
+    margin: 15px 15px 15px 10px;
+    cursor: pointer;
+}
+.aboutBlock {
+    padding: 25px;
+}
+.aboutImageBlock {
+    width: 25%;
+    height: 460px;
+    float: left;
+    margin-right: 25px;
+}
