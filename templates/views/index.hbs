@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="app">
+        {{!-- Header Append --}}
+        {{>header}}
+        <div class="weatherBody">
+            <div class="weatherDetailsContainer">
+                <div class="topBlock">
+                    <div class="overlay">
+                        <div class="weatherDetails">
+                            <div class="weatherDetailsTop">
+                                <div class="weatherDetailsTopLeft">
+                                    <div class="degree"><span><span id="degreeValue">0</span>&#8451;</span></div>
+                                    <div class="statusText"><span id="weatherStatus"></span></div>
+                                </div>
+                                <div class="weatherDetailsTopRight">
+                                    <div class="searchField">
+                                        <span class="currentInpu"><input type="text" id="searchTextBox"
+                                                onkeyup="hideLocation()" placeholder="Search Location" /></span>
+                                        <span class="currentSear" onclick="weatherFormSearch()"><i
+                                                class="material-icons">search</i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weatherDetailsBottom">
+                                <div class="locaText" id="locaText">
+                                    <span class="currentLoca"><i class="material-icons">location_on</i></span>
+                                    <span class="location_text" id="fullLocation"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botBlock">
+                    <div class="completeDetailsBlock">
+                         <div class="details">
+                            <p class="reportIcon reportIconRain"></p>
+                            <p class="reportHead">Rain Chance</p>
+                            <p class="reportValue"><span id="rainChance">0</span> %</p>
+                        </div>
+                        <div class="details">
+                            <p class="reportIcon reportIconWind"></p>
+                            <p class="reportHead">Wind Speed</p>
+                            <p class="reportValue"><span id="windSpeed">0</span> mph</p>
+                        </div>
+                        <div class="details">
+                            <p class="reportIcon reportIconHum"></p>
+                            <p class="reportHead">Humidity</p>
+                            <p class="reportValue"><span id="humidity">0</span> %</p>
+                        </div>
+                        <div class="details">
+                            <p class="reportIcon reportIconVis"></p>
+                            <p class="reportHead">Visibility</p>
+                            <p class="reportValue"><span id="visiblity">0</span> mi</p>
+                        </div>
+                        <div class="details">
+                            <p class="reportIcon reportIconDew"></p>
+                            <p class="reportHead">Dew Pt</p>
+                            <p class="reportValue"><span id="dwePt">0</span> &#730;</p>
+                        </div>
+                    </div>
+                    <p class="statusSummary" id="statusSummary"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
